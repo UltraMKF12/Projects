@@ -5,3 +5,6 @@ Crowns, Hungary, Charlemagne, United Kingdom - text and image
 https://en.wikipedia.org/wiki/Holy_Crown_of_Hungary
 https://en.wikipedia.org/wiki/Crown_of_Charlemagne
 https://en.wikipedia.org/wiki/St_Edward%27s_Crown
+
+Emoji for wallpaper
+https://fontawesome.com/v5/icons/crown?f=classic&s=solid

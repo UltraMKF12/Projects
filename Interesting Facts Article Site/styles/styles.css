@@ -15,7 +15,10 @@ img {
 }
 
 body {
-    background-color: rgb(153, 153, 153);
+    background-color: rgb(32, 32, 32);
+    background-image: url("../img/crown\ emoji\ wallpaper3.png");
+    background-size: 531px 388px;
+    background-attachment: fixed;
 }
 
 
@@ -76,26 +79,32 @@ h1 {
     margin: 3rem 0.2rem 8rem 7.5rem;
     text-align: center;
     color: rgb(255, 255, 255);
-    text-shadow: 2px 2px 3px black;
+    text-shadow: 2px 2px 2px hsl(0, 0%, 0%);
+    text-decoration: underline;
 }
 
 
 
 
 /* Main Content */
+main {
+    max-width: 1332px;
+    margin: 0 auto;
+}
+
 section {
     display: flex;
     justify-content: space-evenly;
     margin-inline: 1rem;
     text-align: justify;
-    color: aliceblue;
+    color: rgb(255, 255, 255);
     scroll-margin-top: 150px;
     margin-bottom: 8rem;
 }
 
 section article,
 section aside {
-    background-color: rgb(40, 40, 40);
+    background-color: rgba(66, 66, 66, 0.938);
     padding: 0.6rem;
     border-radius: 1.5rem;
 }
@@ -104,7 +113,7 @@ section article {
     flex-grow: 3;
     flex-basis: 60%;
 
-    margin-inline: 1rem;
+    margin-right: 1rem;
 }
 
 .other-facts {
@@ -114,7 +123,7 @@ section article {
 
 .images {
     margin-top: 2rem;
-    border-top: 1px solid rgb(107, 107, 107);
+    border-top: 1px solid rgb(255, 255, 255);
     width: 100%;
     height: auto;
     padding: 1rem;
@@ -176,6 +185,17 @@ li::before {
     gap: 1.5rem;
 }
 
+section:first-child article {
+    background-color: rgba(1, 44, 0, 0.938);
+}
+
+section:nth-child(2) article {
+    background-color: rgba(6, 0, 44, 0.938);
+}
+
+section:last-child article {
+    background-color: rgba(44, 0, 0, 0.938);
+}
 
 /* Footer */
 footer {
@@ -204,11 +224,13 @@ footer a:focus {
         position: relative;
         width: 100%;
         overflow: hidden;
+        justify-content: center;
     }
 
     nav {
         display: none;
     }
+
     .slanted-decoration {
         display: none;
     }
@@ -230,5 +252,42 @@ footer a:focus {
         margin-top: 2rem;
         max-width: 80%;
     }
+}
 
+/* Light Theme */
+@media (prefers-color-scheme: light) {
+    body {
+        background-image: url("../img/crown\ emoji\ wallpaper2.png");
+        background-color: rgb(238, 254, 255);
+    }
+
+    h1 {
+        color: rgb(0, 0, 0);
+        text-shadow: 2px 2px 2px hsl(0, 0%, 0%);
+    }
+
+    section {
+        color: rgb(0, 0, 0);
+    }
+
+    section article,
+    section aside {
+        background-color: hsl(0, 0%, 80%, 0.938);
+    }
+
+    .images {
+        border-top: 1px solid rgb(0, 0, 0);
+    }
+
+    section:first-child article {
+        background-color: hsla(119, 100%, 80%, 0.938);
+    }
+    
+    section:nth-child(2) article {
+        background-color: hsl(248, 100%, 80%, 0.938);
+    }
+    
+    section:last-child article {
+        background-color: hsl(0, 100%, 80%, 0.938);
+    }
 }
