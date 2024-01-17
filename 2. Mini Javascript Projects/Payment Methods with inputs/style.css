@@ -1,0 +1,44 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button {
+    font-family: inherit;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    background-color: hsl(211, 100%, 70%);
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.25s;
+    user-select: none;
+}
+
+button:hover {
+    background-color: hsl(211, 100%, 50%);
+}
+
+button:active {
+    background-color: hsl(211, 100%, 30%);
+    color: white;
+}
+
+label {
+    font-size: 2em;
+}
+
+input {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+p {
+    font-size: 2em;
+    color: crimson;
+    text-shadow: 1px 1px 5px crimson;
+}
+
+p::selection {
+    background-color: aquamarine;
+    color: darkred;
+}
