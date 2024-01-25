@@ -6,21 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clean News</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <!-- Webpage name and Language selectors-->
     <header>
-        <h1>Clean News</h1>
-        <p>The cleanest news site on the web.</p>
-        <div id="english-language" class="button-on">EN</div>
-        <div id="hungarian-language" class="button-on">HU</div>
+        <div class="title">
+            <h1>Clean News</h1>
+            <p>The cleanest news site on the web.</p>
+        </div>
+        <div class="languages">
+            <div>
+                <label class="switch">
+                    <input type="checkbox" name="englishCheckbox" id="englishCheckbox" checked>
+                    <span class="slider round"></span>
+                </label>
+                <p>EN 🇬🇧</p>
+            </div>
+            <div>
+                <label class="switch" name="hungarianCheckbox" id="hungarianCheckbox">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+                <p>HU 🇭🇺</p>
+            </div>
+        </div>
     </header>
 
     <!-- News Settings -->
     <section class="news-settings">
         <div class="api-setting">
-            <a href="https://newsapi.org/">Get a NEWS API</a>
+            <a href="https://newsapi.org/">Get NEWS API key</a>
             <input type="text" name="apiKey" id="apiKey" placeholder="Type in your API key">
             <button id="apiSave">Save</button>
             <span class="checkmark">✔✖</span>
@@ -82,7 +106,8 @@
                 <p>
                     The first image of the Slim spacecraft shows it to be in an awkward position on the lunar surface.
                 </p>
-                <img src="https://ichef.bbci.co.uk/news/1024/branded_news/2992/production/_132424601_slim_lander_reuters.jpg">
+                <img
+                    src="https://ichef.bbci.co.uk/news/1024/branded_news/2992/production/_132424601_slim_lander_reuters.jpg">
                 <p>2024-01-25</p>
             </article>
         </section>
@@ -91,7 +116,7 @@
     <!-- Generic Footer -->
     <footer>
         <p>Made by Széri József in 2024</p>
-        <a href="">Github</a>
+        <a href="https://github.com/UltraMKF12/Projects" target="_blank">Github</a>
     </footer>
 
 
