@@ -26,14 +26,14 @@
         <div class="languages">
             <div>
                 <label class="switch">
-                    <input type="checkbox" name="englishCheckbox" id="englishCheckbox" checked>
+                    <input type="radio" name="language" id="englishCheckbox" checked>
                     <span class="slider round"></span>
                 </label>
                 <p>EN 🇬🇧</p>
             </div>
             <div>
-                <label class="switch" name="hungarianCheckbox" id="hungarianCheckbox">
-                    <input type="checkbox">
+                <label class="switch">
+                    <input type="radio" name="language" id="hungarianCheckbox">
                     <span class="slider round"></span>
                 </label>
                 <p>HU 🇭🇺</p>
@@ -52,46 +52,47 @@
 
         <div class="category-setting">
             <p>Categories</p>
-            <input type="checkbox" name="all" id="all">
-            <label for="all">all</label>
             <div>
-                <input type="checkbox" name="business" id="business">
+                <input type="radio" name="category" id="all" checked>
+                <label for="all">all</label>
+
+                <input type="radio" name="category" id="business">
                 <label for="business">business</label>
 
-                <input type="checkbox" name="entertainment" id="entertainment">
+                <input type="radio" name="category" id="entertainment">
                 <label for="entertainment">entertainment</label>
 
-                <input type="checkbox" name="general" id="general">
+                <input type="radio" name="category" id="general">
                 <label for="general">general</label>
 
-                <input type="checkbox" name="health" id="health">
+                <input type="radio" name="category" id="health">
                 <label for="health">health</label>
 
-                <input type="checkbox" name="science" id="science">
+                <input type="radio" name="category" id="science">
                 <label for="science">science</label>
 
-                <input type="checkbox" name="sports" id="sports">
+                <input type="radio" name="category" id="sports">
                 <label for="sports">sports</label>
 
-                <input type="checkbox" name="technology" id="technology">
+                <input type="radio" name="category" id="technology">
                 <label for="technology">technology</label>
             </div>
         </div>
 
-        <div class="keyword-setting">
+        <!-- <div class="keyword-setting">
             <input type="text" name="keywordInput" id="keywordInput" placeholder="Type in a keyword">
             <button id="addKeywordButton">Add</button>
             <ul>
                 <li>business✖</li>
                 <li>tech✖</li>
             </ul>
-        </div>
+        </div> -->
 
         <button id="generate">Generate</button>
     </section>
 
     <!-- Open close button for the settings -->
-    <button id="settingsOpener">Close Settings✖</button>
+    <!-- <button id="settingsOpener">Close Settings✖</button> -->
 
     <!-- News Articles -->
     <main>
@@ -115,7 +116,7 @@
 
     <!-- Generic Footer -->
     <footer>
-        <p>Made by Széri József in 2024</p>
+        <p>Széri József, 2024</p>
         <a href="https://github.com/UltraMKF12/Projects" target="_blank">Github</a>
     </footer>
 
