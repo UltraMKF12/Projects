@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clean News</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Webpage name and Language selectors-->
+    <header>
+        <h1>Clean News</h1>
+        <p>The cleanest news site on the web.</p>
+        <div id="english-language" class="button-on">EN</div>
+        <div id="hungarian-language" class="button-on">HU</div>
+    </header>
+
+    <!-- News Settings -->
+    <section class="news-settings">
+        <div class="api-setting">
+            <a href="https://newsapi.org/">Get a NEWS API</a>
+            <input type="text" name="apiKey" id="apiKey" placeholder="Type in your API key">
+            <button id="apiSave">Save</button>
+            <span class="checkmark">✔✖</span>
+        </div>
+
+        <div class="category-setting">
+            <p>Categories</p>
+            <input type="checkbox" name="all" id="all">
+            <label for="all">all</label>
+            <div>
+                <input type="checkbox" name="business" id="business">
+                <label for="business">business</label>
+
+                <input type="checkbox" name="entertainment" id="entertainment">
+                <label for="entertainment">entertainment</label>
+
+                <input type="checkbox" name="general" id="general">
+                <label for="general">general</label>
+
+                <input type="checkbox" name="health" id="health">
+                <label for="health">health</label>
+
+                <input type="checkbox" name="science" id="science">
+                <label for="science">science</label>
+
+                <input type="checkbox" name="sports" id="sports">
+                <label for="sports">sports</label>
+
+                <input type="checkbox" name="technology" id="technology">
+                <label for="technology">technology</label>
+            </div>
+        </div>
+
+        <div class="keyword-setting">
+            <input type="text" name="keywordInput" id="keywordInput" placeholder="Type in a keyword">
+            <button id="addKeywordButton">Add</button>
+            <ul>
+                <li>business✖</li>
+                <li>tech✖</li>
+            </ul>
+        </div>
+
+        <button id="generate">Generate</button>
+    </section>
+
+    <!-- Open close button for the settings -->
+    <button id="settingsOpener">Close Settings✖</button>
+
+    <!-- News Articles -->
+    <main>
+        <section class="articles">
+            <article>
+                <h2>
+                    <a href="https://www.bbc.com/news/science-environment-68091389">
+                        Stricken Japanese Moon mission
+                        landed on its nose - BBC.com
+                    </a>
+                </h2>
+                <p>
+                    The first image of the Slim spacecraft shows it to be in an awkward position on the lunar surface.
+                </p>
+                <img src="https://ichef.bbci.co.uk/news/1024/branded_news/2992/production/_132424601_slim_lander_reuters.jpg">
+                <p>2024-01-25</p>
+            </article>
+        </section>
+    </main>
+
+    <!-- Generic Footer -->
+    <footer>
+        <p>Made by Széri József in 2024</p>
+        <a href="">Github</a>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
