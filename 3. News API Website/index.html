@@ -21,7 +21,7 @@
     <header>
         <div class="title">
             <h1>Clean News</h1>
-            <p>The cleanest news site on the web.</p>
+            <p>Headlines without ads.</p>
         </div>
         <div class="languages">
             <div>
@@ -29,7 +29,7 @@
                     <input type="radio" name="language" id="englishCheckbox" checked>
                     <span class="slider round"></span>
                 </label>
-                <p>EN 🇬🇧</p>
+                <p>US 🇺🇸</p>
             </div>
             <div>
                 <label class="switch">
@@ -44,74 +44,59 @@
     <!-- News Settings -->
     <section class="news-settings">
         <div class="api-setting">
-            <a href="https://newsapi.org/">Get NEWS API key</a>
+            <a href="https://newsapi.org/" class="api-text">Get NEWS API key</a>
             <input type="text" name="apiKey" id="apiKey" placeholder="Type in your API key">
-            <button id="apiSave">Save</button>
-            <span class="checkmark">✔✖</span>
         </div>
 
+        <p class="category-text">Categories</p>
         <div class="category-setting">
-            <p>Categories</p>
-            <div>
-                <input type="radio" name="category" id="all" checked>
-                <label for="all">all</label>
+            <input type="radio" name="category" id="all" value="" checked>
+            <label for="all" class="selection-label">all</label>
 
-                <input type="radio" name="category" id="business">
-                <label for="business">business</label>
+            <input type="radio" name="category" id="business" value="business">
+            <label for="business" class="selection-label">business</label>
 
-                <input type="radio" name="category" id="entertainment">
-                <label for="entertainment">entertainment</label>
+            <input type="radio" name="category" id="entertainment" value="entertainment">
+            <label for="entertainment" class="selection-label">entertainment</label>
 
-                <input type="radio" name="category" id="general">
-                <label for="general">general</label>
+            <input type="radio" name="category" id="general" value="general">
+            <label for="general" class="selection-label">general</label>
 
-                <input type="radio" name="category" id="health">
-                <label for="health">health</label>
+            <input type="radio" name="category" id="health" value="health">
+            <label for="health" class="selection-label">health</label>
 
-                <input type="radio" name="category" id="science">
-                <label for="science">science</label>
+            <input type="radio" name="category" id="science" value="science">
+            <label for="science" class="selection-label">science</label>
 
-                <input type="radio" name="category" id="sports">
-                <label for="sports">sports</label>
+            <input type="radio" name="category" id="sports" value="sports">
+            <label for="sports" class="selection-label">sports</label>
 
-                <input type="radio" name="category" id="technology">
-                <label for="technology">technology</label>
-            </div>
+            <input type="radio" name="category" id="technology" value="technology">
+            <label for="technology" class="selection-label">technology</label>
         </div>
 
-        <!-- <div class="keyword-setting">
-            <input type="text" name="keywordInput" id="keywordInput" placeholder="Type in a keyword">
-            <button id="addKeywordButton">Add</button>
-            <ul>
-                <li>business✖</li>
-                <li>tech✖</li>
-            </ul>
-        </div> -->
-
-        <button id="generate">Generate</button>
+        <button id="generateButton" onclick="generateNews()">Get News</button>
     </section>
 
-    <!-- Open close button for the settings -->
-    <!-- <button id="settingsOpener">Close Settings✖</button> -->
-
     <!-- News Articles -->
+    <p id="errorText">There was an ERROR!</p>
     <main>
-        <section class="articles">
-            <article>
-                <h2>
-                    <a href="https://www.bbc.com/news/science-environment-68091389">
-                        Stricken Japanese Moon mission
-                        landed on its nose - BBC.com
-                    </a>
-                </h2>
-                <p>
-                    The first image of the Slim spacecraft shows it to be in an awkward position on the lunar surface.
-                </p>
-                <img
-                    src="https://ichef.bbci.co.uk/news/1024/branded_news/2992/production/_132424601_slim_lander_reuters.jpg">
+        <article>
+            <h2 class="article-title">
+                <a href="https://www.bbc.com/news/science-environment-68091389">
+                    Stricken Japanese Moon mission
+                    landed on its nose - BBC.com
+                </a>
+            </h2>
+            <p>
+                The first image of the Slim spacecraft shows it to be in an awkward position on the lunar surface.
+            </p>
+            <img
+                src="https://ichef.bbci.co.uk/news/1024/branded_news/2992/production/_132424601_slim_lander_reuters.jpg">
+            <div class="article-time">
                 <p>2024-01-25</p>
-            </article>
-        </section>
+            </div>
+        </article>
     </main>
 
     <!-- Generic Footer -->
