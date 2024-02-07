@@ -7,7 +7,8 @@ const main = document.querySelector("main");
 
 async function getNewsFromApi(key, category, language) {
     try {
-        let response = await fetch(`https://newsapi.org/v2/top-headlines?country=${language}${category}&pageSize=100&apiKey=${key}`);
+        // let response = await fetch(`https://newsapi.org/v2/top-headlines?country=${language}${category}&pageSize=100&apiKey=${key}`);
+        let response = await fetch(`https://newsapi.org/v2/top-headlines?country=us&pageSize=100&apiKey=`);
         if (response.ok) {
             return await response.json();
         }
@@ -40,6 +41,7 @@ async function generateNews() {
 
     try{
         let news = await getNewsFromApi(apiKey, selectedCategory, language);
+        console.log(news);
         main.innerHTML = "";
         console.log(news.articles[0]);
         for (let article of news.articles) {
