@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(45, 45, 143);
+  font-size: 3rem;
+}
+
+.main {
+  width: 80%;
+  margin: 0 auto;
+}
+.main .main__paragraph {
+  font-weight: 700;
+  color: white;
+}
+.main .main__paragraph:hover {
+  color: grey;
+}/*# sourceMappingURL=main.css.map */
