@@ -7,8 +7,7 @@ const main = document.querySelector("main");
 
 async function getNewsFromApi(key, category, language) {
     try {
-        // let response = await fetch(`https://newsapi.org/v2/top-headlines?country=${language}${category}&pageSize=100&apiKey=${key}`);
-        let response = await fetch(`https://newsapi.org/v2/top-headlines?country=us&pageSize=100&apiKey=`);
+        let response = await fetch(`https://newsapi.org/v2/top-headlines?country=${language}${category}&pageSize=100&apiKey=${key}`);
         if (response.ok) {
             return await response.json();
         }
