@@ -1,2 +1,2 @@
 # Projects
- My public projects
+HTML, CSS, Javascript learning projects that were made to help me understand the fundamentals better.
